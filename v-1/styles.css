@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Righteous&display=swap');
+
+:root {
+    --font-color: #00308a;
+    --background-color: #282828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    font-family: Poppins;
+    color: var(--font-color);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    min-height: 100vh;
+    background: var(--background-color);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 90vw;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.hero {
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+}
+
+.tagContainer {
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+.tagContainer li {
+    margin: 10px;
+    background: blue;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+}
+
+svg {
+    position: relative;
+    z-index: 1;
+}
+
+text {
+    font-weight: 200;
+    font-size: 2rem;
+    fill: var(--font-color);
+}
+
+@media screen and (max-width: 906px) {
+    svg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 906px) {
+    svg {
+        display: block;
+    }
+}
+
+
+.projectContainer {
+    width: 90vw;
+    flex-wrap: wrap;
+}
