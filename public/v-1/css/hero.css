@@ -1,0 +1,16 @@
+.hero {
+    font-family: Righteous;
+    background: linear-gradient(rgba(66, 0, 255, 1), rgba(66, 0, 255, 0.63));
+}
+
+.heroText {
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    width: 40vw;
+    font-size: 2rem;
+}
+
+.heroImage {
+    width: 30vw;
+}

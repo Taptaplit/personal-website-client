@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Righteous&display=swap');
+
+.contact {
+    width: 90vw;
+}
+
+.section {
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

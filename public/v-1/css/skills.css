@@ -1,0 +1,17 @@
+.skills {
+    background: linear-gradient(rgba(66, 0, 255, 0.63), rgba(179, 152, 255, 1));
+    font-family: Righteous;
+}
+
+.skillsText {
+    font-size: 3rem;
+}
+
+.skillCharts {
+    padding: 5px;
+}
+
+.skillsHeader {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../components/head'); %>
+    </head>
+    <body class="">
+        <header>
+            <%- include('../components/header'); %>
+        </header>
+        <main>
+            <div class="hero section flex">
+                <div class="content flex">
+                    <div class="flex heroText">
+                        <h1>Hey, I'm Taptaplit.</h1>
+                        <h1>A Developer, Student, Freelancer.</h1>
+                    </div>
+                    <img class="heroImage" src="/v-1/images/hero.svg" /> 
+                </div>
+            </div>
+            <div class="skills section flex">
+                <div class="content">
+                    <h1 class="skillsText">Skills</h1>
+                    <div class="skillCharts">
+                        <h1 class="skillsHeader">Most Used Language</h1>
+                        <div id="barchart_values" style="width: 80vw; height: 30vh;"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Language", "% of Time", { role: "style" } ],
+                    ["JavaScript", 40, "color: yellow"],
+                    ["Python", 30, "color: #ADD8E6"],
+                    ["Crystal", 11, "color: orange"],
+                    ["Golang", 9, "color: purple"],
+                    ["C#/C++", 6, "color: red"],
+                    ["Java", 4, "color: blue"]
+                ]);
+
+                var view = new google.visualization.DataView(data);
+                view.setColumns([0, 1,
+                    { calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation" },
+                    2]);
+
+                var options = {
+                    fontName: "Righteous",
+                    fontSize: 20,
+                    bar: {groupWidth: "30%"},
+                    backgroundColor: { fill:'transparent' },
+                    legend: { position: "none" },
+                };
+                var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+                chart.draw(view, options);
+            }
+        </script>
+
+        <link href="/v-1/css/hero.css" rel="stylesheet" type="text/css">
+        <link href="/v-1/css/skills.css" rel="stylesheet" type="text/css">
+    </body>
+</html>
