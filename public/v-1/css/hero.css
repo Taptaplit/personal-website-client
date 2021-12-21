@@ -14,3 +14,12 @@
 .heroImage {
     width: 30vw;
 }
+
+@media screen and (max-width: 600px) {
+    .heroText {
+        font-size: 0.7rem;
+    }
+    .content {
+        width: 95vw;
+    }
+}

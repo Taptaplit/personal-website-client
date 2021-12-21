@@ -16,6 +16,7 @@ app.get("/v-1", async (req, res) => {
     request({url: 'https://portfolio-backend-mongo-server.herokuapp.com/about/skill-content', json: true}, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             res.render('v-1/pages/index', {skills: body.result});
+            console.log(body.result)
         }
     })
 })

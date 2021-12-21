@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Righteous&display=swap');
 
-.contact {
-    width: 90vw;
+.content {
+   max-width: 90vw;
 }
 
 .section {
@@ -14,3 +14,4 @@
     align-items: center;
     justify-content: center;
 }
+

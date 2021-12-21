@@ -15,3 +15,29 @@
     margin-left: 10px;
     font-size: 1.5rem;
 }
+
+.SkillsDepthContainer {
+    align-items: start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 10px;
+}
+
+.skillTitle {
+    font-size: 2.3rem;
+}
+
+.skillDescription {
+    font-size: 1.3rem;
+}
+
+.skillContainer {
+    margin: 20px;
+    width: 40vw;
+}
+
+@media screen and (max-width: 600px) {
+    .skillContainer {
+        width: 90vw;
+    }
+}
